@@ -1,14 +1,14 @@
 # Ejemplos Prácticos
 
-En este repositorio podrán encontrar todas las plantillas de los ejemplos prácticos de las materclasses correspondientes al módulo front end de Argentina Programa 4.0, en cada rama se encuentran los archivos correspondientes a cada tema.
+En este repositorio podrán encontrar todas las plantillas de los ejemplos prácticos de las clases correspondientes al módulo front-end de Argentina Programa 4.0, en cada carpeta se encuentran los archivos correspondientes a cada uno de los cohorts y sus temáticas dictadas.
 
 ## Uso
 
-Cada rama contiene el ejemplo correspondiente a su clase por lo que si buscas alguna clases en particular es una buena idea navegar por las ramas del repositorio.
+Cada carpeta contiene un ejemplo correspondiente a cada uno de las clases, por lo que si buscas alguna clases en particular es una buena idea navegar por la carpeta correspondiente a tu cohort y clonarlo para poder tener en tu computadora el código correspondiente a dicha clase.
 
-Una vez seleccionada la rama:
+Una vez seleccionada la carpeta:
 
-1 - En la interfaz de la misma en GitHub, ir a <>code y copiar el link del repositorio.
+1 - Copiar el link del repositorio.
 
 2 - En Visual Studio Code, abrir la termina y colocar el comando git clone -b [nombreDeLaRama] [linkDelRepositorio]
 
@@ -32,5 +32,5 @@ De esta manera se clonará de forma local el repositorio remoto para poder utili
 14 - Medidas Relativas<br>
 15 - DOM<br>
 16 - Asincronismo<br>
-17 - VUE<br>
+17 - Vue.js<br>
 18 - Local Storage<br>
