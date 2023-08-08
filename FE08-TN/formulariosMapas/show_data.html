@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Anton&family=Nunito+Sans:wght@200;400&family=Nunito:wght@200;400&family=Carter+One&family=Permanent+Marker&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./assets/duck_icon.png">
+    <title>Feedback Sent</title>
+</head>
+<body>
+
+    <!-- ENCABEZADO -->
+    <header>
+        <div id="stripe2"></div>
+        <div id="mark">
+            <h1>MIGTHY DUCKS HOCKEY LEAGUE</h1>
+        </div>
+        <h2 id="stripe">Register Information</h2>
+    </header>
+
+    <!-- CONTENIDO PRINCIPAL -->
+    <main>
+
+    <!-- BARRA DE NAVEGACION -->
+        <nav>
+            <a href="index.html">Volver</a>
+        </nav>
+        
+    <!-- CONTENEDOR DERECHO -->
+        <section class="r-cont">
+<h4>The following information has been sent as your feedback:</h4>
+
+<table id="reg-data">
+  <tr>
+    <th>Form Field</th>
+    <th>Field Value</th>
+  </tr>
+
+    <script language="javascript">
+      var args = location.search.substr(1).split('&');
+      for (var i = 0; i < args.length; ++i) {
+        var parts = args[i].split('=');
+        if (parts != null) {
+          var field = parts[0];
+          var value = parts[1];
+          if (value == null) {
+            value = "null"
+          }
+          else {
+            value = '"' + unescape(value.replace(/\+/g, ' ')) + '"';
+          }
+
+          document.writeln('<tr><td align="left">' + field + '</td>');
+          document.writeln('<td align="left">' + value + '</td></tr>');
+        }
+      }
+    </script>
+
+</table>
+        </section>
+    </main>
+
+</body>
+</html>

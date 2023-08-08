@@ -1,0 +1,62 @@
+/* * {
+    color: black;
+} */
+#principal{
+    color:red;
+    background-color: yellow;
+    font-size: 40px;
+}
+#h2-principal {
+    color: blue;
+    font-size: 22px;
+    text-transform: lowercase;
+}
+.cursiva {
+    font-style: italic;
+}
+header figure{
+    background: url('../img/portal.jpg');
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+footer{
+    background-color: lightgreen;
+    height: 100px;
+}
+section{
+    background-color: #fffccc;
+}
+footer h2 {
+    color: green;
+}
+h2 {
+    color: orange;
+}
+.records h3 {
+    color: green;
+}
+.bold {
+    font-weight: 600;
+}
+div p {
+    font-style: italic;
+    font-size: 25px;
+}
+.bands-container > p {
+    font-weight: 700;
+}
+a {
+    color: red;
+    font-size: 23px;
+}
+a:hover {
+    color: violet;
+}
+a[href="https://instagram.com"] {
+    color: yellow;
+}
+.colaboration img {
+    width: 500px;
+}

@@ -1,0 +1,33 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap');
+
+*{
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+     font-family: 'Raleway', sans-serif;
+     font-weight: bold;
+}
+body{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: center;
+     background-image: url(./assets/fondo_body.png);
+     padding: 50px 0;
+}
+form{
+     display: flex;
+     flex-direction: column;
+     gap: 10px;
+     width: 65%;
+     background-color: aquamarine;
+     padding: 20px;
+     box-shadow: 10px 10px 10px gray;
+}
+fieldset{
+     padding: 10px;
+}
+.inputChico{
+     width: 200px;
+}

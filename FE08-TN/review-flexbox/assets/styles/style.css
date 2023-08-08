@@ -1,0 +1,132 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+
+/* header{
+    height: 15vh;
+    background-image: url('../img/banner.png');
+}
+main{
+    min-height: 75vh;
+}
+footer{
+    min-height: 10vh;
+    background-color: #000;
+} */
+
+
+header{
+    height: 15vh;
+    background-image: url('../img/banner.png');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+h1{
+    font-size: 2.2rem;
+    color: orange;
+    text-shadow: 1px 1px 1px #000;
+}
+main{
+    min-height: 75vh;
+    display: flex;
+}
+nav{
+    background-color: orange;
+    width: 20%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    padding: 1rem;
+}
+nav a {
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+    background-color: #000;
+    font-size: 1rem;
+    font-weight: 500;
+    padding: .5rem;
+    border-radius: .5rem;
+}
+nav a.active {
+    background-color: greenyellow;
+    color: #000;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+}
+h2 {
+    font-size: 1.3rem;
+}
+.cards-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1.5rem;
+    padding: 1rem;
+}
+.card{
+    width: 30rem;
+    height: 10rem;
+    color: #fff;
+    background-color: blue;
+    border-radius: .7rem;
+    display: flex;
+}
+.card div{
+    width: 50%;
+    align-self: center;
+    padding: 0 1rem;
+}
+.card h3{
+    font-size: 1rem;
+    text-align: center;
+}
+.card p {
+    font-size: .8rem;
+    padding-top: .5rem;
+}
+.card img {
+    width: 50%;
+    border-radius: 0 1.5rem 1.5rem 0;
+}
+footer{
+    min-height: 10vh;
+    background-color: #000;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 2rem
+    /* flex-wrap: wrap-reverse; */
+}
+footer *{
+    font-size: .8rem;
+    color: #fff;
+    
+}
+footer a {
+    color: orange;
+}
+
+@media screen and (max-width: 768px){
+    main{
+        flex-direction: column;
+        align-items: center;
+    }
+    nav{
+        flex-direction: row;
+        width: 100%;
+    }
+    footer{
+        padding: 2rem;
+        flex-direction: column;
+    }
+}

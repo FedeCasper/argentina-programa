@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <link rel="shortcut icon" href="./assets/mapa.ico" type="image/x-icon" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="./style.css" />
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>Clase Formularios y Mapas</h1>
+
+  <form action="./show_data.html" method="get">
+    <fieldset>
+      <legend>Datos Personales</legend>
+      <label for="nombre">Nombre Completo*</label>
+      <input type="text" name="nombre" id="nombre" placeholder="juan perez" required />
+      <label for="edad">Edad</label>
+      <input type="number" name="edad" id="edad" min="18" max="99" />
+      <label for="fechaNac">Fecha Nac.</label>
+      <input type="date" id="fechaNac" name="fechaNac" />
+    </fieldset>
+
+    <fieldset>
+      <legend>Género</legend>
+      <label for="masc">Masculino</label>
+      <input type="radio" name="genero" id="masc" />
+      <label for="fem">Femenino</label>
+      <input type="radio" name="genero" id="fem" />
+      <label for="otro">Otros</label>
+      <input type="radio" name="genero" id="otro" />
+    </fieldset>
+
+    <fieldset>
+      <legend>Tecnologías</legend>
+      <label for="java">Java</label>
+      <input type="checkbox" name="tecnologias" id="java" value="java" />
+      <label for="javascript">JavaScript</label>
+      <input type="checkbox" name="tecnologias" id="javascript" value="js" />
+      <label for="php">PHP</label>
+      <input type="checkbox" name="tecnologias" id="php" value="php" />
+    </fieldset>
+
+    <label for="pais">Pais de origen</label>
+    <select class="inputChico" name="pais" id="pais">
+      <option value="arg">Argentina</option>
+      <option value="bra" selected>Brasil</option>
+      <option value="uru">Uruguay</option>
+    </select>
+
+    <label>Password
+      <input type="password" name="pass" id="pass" />
+    </label>
+
+    <label for="img">Cargue su foto</label>
+    <input type="file" name="img" id="img" />
+
+    <label for="calificacion">Califique el formulario</label>
+    <input class="inputChico" type="range" name="calificacion" id="calificacion" min="0" max="5" />
+
+    <label for="comentario">Deje su comentario</label>
+    <textarea name="comentario" id="comentario" cols="20" rows="5"></textarea>
+
+    <label for="color">No soy un robot, escoja el color violeta</label>
+    <input type="color" name="color" id="color" />
+
+    <input class="inputChico" type="submit" value="enviar" />
+    <input class="inputChico" type="reset" value="reset" />
+
+    <iframe
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3350.3217776236975!2d-68.88228964877352!3d-32.88965967624313!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x967e09b522bd5683%3A0x684a90ae779e7723!2sEstadio%20Malvinas%20Argentinas!5e0!3m2!1ses-419!2sar!4v1675466784121!5m2!1ses-419!2sar"
+      width="400" height="300" style="border: 5" allowfullscreen="" loading="lazy"
+      referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+  </form>
+</body>
+
+</html>

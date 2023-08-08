@@ -1,0 +1,83 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
+
+*{
+     font-family: 'Raleway', sans-serif;
+}
+#normal{
+     height: 200px;
+     outline: 1px solid red;
+}
+#ancho{
+     height: 200px;
+     width: 50px;
+     outline: 1px solid red;
+}
+#alto{
+     height: 50px;
+     width: 180px;
+     outline: 1px solid red;
+}
+
+#padding{
+     height: 100px;
+     width: 100px;
+     background-color: blueviolet;
+     padding: 20px;
+}
+#contenido{
+     height: 100px;
+     width: 100px;
+     background-color: darkorange;
+}
+
+#parrafo{
+     background-color: darkcyan;
+     padding: 10px;
+}
+
+.personajes{
+     height: 100px;
+     border: 3px solid red;
+     background-color: aquamarine;
+     padding: -20px;
+     margin: 30px 15px;
+}
+
+#contenedorPersonajes{
+     background-color: aquamarine;
+}
+
+#box{
+     width: 100px;
+     height: 100px;
+     background-color: blueviolet;
+     padding: 10px;
+     border: 20px solid blueviolet;
+     box-sizing: border-box;
+}
+
+main{
+     width: 500px;
+     border: 1px solid red;
+}
+h2{
+     background-color: aquamarine;
+     display: block;
+}
+
+a{
+     background-color: aquamarine;
+     display: inline-block;
+     height: 30px;
+     width: 100px;
+     padding: 10px;
+}
+a:hover{
+     background-color: blueviolet;
+     color: aliceblue;
+}
+
+p{
+     margin: 0;
+}

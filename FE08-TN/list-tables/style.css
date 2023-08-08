@@ -1,0 +1,41 @@
+ul > li {
+    font-size: 20px;
+    list-style-type: "*";
+    list-style-position: inside;
+    /* border: 2px solid red; */
+    padding: 0 25px;
+}
+dl dt {
+    color: red;
+    padding-left: 20px;
+}
+table {
+    border-spacing: 20px;
+}
+thead {
+    background-color: aqua;
+    height: 70px;
+}
+table th, table td {
+    text-align: center;
+}
+/* th {
+    width: 150px;
+} */
+.names{
+    width: 100px;
+    background-color: red;
+}
+.mail {
+    width: 200px;
+}
+.numbers {
+    width: 100px;
+}
+table tfoot{
+    background-color: bisque;
+}
+caption{
+    caption-side: bottom;
+    text-align: start;
+}

@@ -1,0 +1,129 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Slab&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+
+header{
+    width: 100%;
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #0d253f;
+}
+
+header .logo{
+    padding: .5em;
+}
+
+header .logo span{
+    font-size: 3rem;
+    background-color: #fff;
+    background: radial-gradient(#01b4e4, #90cea1);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+}
+
+header nav{
+    display: flex;
+    gap: 1.5em;
+}
+
+header nav a{
+    font-size: x-large;
+    text-decoration: none;
+    color: #01b4e4;
+    font-family: 'Roboto Slab', serif;
+}
+
+header a:hover{
+    text-decoration: underline #fff;
+}
+
+
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f1f1f1;
+    padding: 1rem;
+    width: 100%;
+    min-height: calc(100vh - 80px);
+}
+
+main section{
+    padding: 2rem 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+main section .container-cards{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+    gap: 2em;
+}
+
+main section .container-cards .card{
+    width: 275px;
+    padding: .5em;
+    padding-bottom: 1.5em;
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: rgba(149, 157, 165, 0.2) 0px 8px 24px;
+}
+
+main section .container-cards .card img{
+    width: 100%;
+    border-radius: 5px;
+}
+
+main section .container-cards .card h3{
+    margin: .5em 0;
+    background: linear-gradient(#01b4e4, #90cea1);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+@media only screen and (max-width: 768px){
+
+    header{
+        justify-content: space-between;
+        padding: 0 1.5em;
+    }    
+}
+
+@media only screen and (max-width: 600px){
+
+    header{
+        flex-direction: column;
+        height: fit-content;
+    }
+
+    header nav{
+        padding: 1em;
+    }
+}
+
+@media only screen and (max-width: 510px){
+
+    main{
+        padding: 1em 2.5em;
+    }
+    
+    main section .container-cards .card{
+        width: 100%;
+    }    
+}
+
+

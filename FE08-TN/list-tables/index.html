@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Listas y tablas</title>
+</head>
+<body>
+    <ul>
+        <li>rojo
+            <ol>
+                <li>item
+                    <ol type="a" start="c">
+                        <li>description
+                            <ol type="i">
+                                <li>1</li>
+                                <li>2</li>
+                            </ol>
+                        </li>
+                        <li>info</li>
+                    </ol>
+                </li>
+                <li>item</li>
+                <li>item</li>
+            </ol>
+        </li>
+        <li>verde</li>
+        <li>azul</li>
+    </ul>
+    <dl>
+        <dt>item</dt>
+        <dd>description</dd>
+        <dd>description</dd>
+        <dt>item</dt>
+        <dd>description</dd>
+    </dl>
+    <table>
+        <caption>Calificación estudiantes</caption>
+        <colgroup>
+            <col span="2" class="names">
+            <col span="1" class="mail">
+            <col span="2" class="numbers">
+        </colgroup>
+        <thead>
+            <tr>
+                <th rowspan="2">Nombre</th>
+                <th rowspan="2">Apellido</th>
+                <th colspan="2">Datos</th>
+                <th rowspan="2">Nota</th>
+            </tr>
+            <tr>
+                <th>Mail</th>
+                <th>Grupo</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Juan</td>
+                <td>Pérez</td>
+                <td>juan@gmail.com</td>
+                <td>3</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>Juan</td>
+                <td>Pérez</td>
+                <td>juan@gmail.com</td>
+                <td>3</td>
+                <td>8</td>
+            </tr>
+            <tr>
+                <td>Juan</td>
+                <td>Pérez</td>
+                <td>juan@gmail.com</td>
+                <td>3</td>
+                <td>8</td>
+        </tbody>
+        <tfoot>
+            <tr>
+                <td colspan="4">Promedio</td>
+                <td>8</td>
+            </tr>
+        </tfoot>
+    </table>
+    <table>
+        <!-- <caption>Calificación estudiantes</caption> -->
+        <thead>
+            <tr>
+                <td></td>
+                <th>Nombre</th>
+                <th>Apellido</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <th>alumno 1</th>
+                <td>Juan</td>
+                <td>Pérez</td>
+            </tr>
+            <tr>
+                <th>alumno 2</th>
+                <td>Juan</td>
+                <td>Pérez</td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

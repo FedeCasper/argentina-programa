@@ -1,0 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@200&family=Satisfy&display=swap');
+*{
+     padding: 0;
+     margin: 0;
+     box-sizing: border-box;
+}
+body{
+     background: rgb(222, 222, 222);
+}
+
+h1{
+     font-family: 'Satisfy', cursive;
+     margin-bottom: 0;
+}
+header{
+     background-color: brown;
+}
