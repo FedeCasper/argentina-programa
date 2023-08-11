@@ -1,0 +1,47 @@
+*{
+    margin:0;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+a{
+  color: red;
+  background-color: black;
+
+}
+
+header{
+  background-color: gray;
+}
+
+.tituloUno{
+  color: red;
+}
+
+
+.containerOne{
+  background-color: violet;
+}
+
+#parrafoUnico{
+  color: rgb(0,0,255);
+  font-size: 20px;
+  font-style: italic;
+
+}
+
+img{
+  width: 50vw;
+}
+article>h3{
+  font-size: 50px;
+  color: brown;
+}
+
+span{
+  background-color: red;
+}
+
+div span{
+  background-color: dodgerblue;
+}
