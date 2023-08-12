@@ -1,0 +1,92 @@
+*{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+}
+
+/* MEDIDAS FIJAS */
+.medidasFijas{
+     border: 2px solid salmon;
+     margin-bottom: 10px;
+     padding: 10px;
+
+}
+#contenedorMedidasFijas{
+     border: 1px solid rgb(114, 248, 250);
+     width: 600px;
+     margin-bottom: 20px;
+}
+#div1{
+     width: 500px;
+}
+#div2{
+     width: 7in;
+}
+#div3{
+     width: 70mm;
+}
+
+/* MEDIDAS RELATIVAS */
+.medidasFijas{
+     border: 1px solid salmon;
+     margin-bottom: 10px;
+     padding: 10px;
+}
+#contenedorMedidasRelativas{
+     border: 2px solid rgb(114, 250, 137);
+     width: 600px;
+     /* font-size: 10px; */
+}
+#divA{
+     width: 100%;
+}
+#divB{
+     width: 90vw;
+}
+#divC{
+     width: 20em;
+}
+#divD{
+     width: 20rem;
+}
+
+/* POSITION */
+#box1{
+     background-color: aquamarine;
+     width: 300px;
+     height: 200px;
+     display: inline-block;
+}
+#box2{
+     background-color: burlywood;
+     width: 300px;
+     height: 200px;
+     display: inline-block;
+     position: absolute;
+     top: 50px;
+     right: 150px;
+}
+#box3{
+     background-color: rgb(135, 139, 222);
+     width: 300px;
+     height: 200px;
+     display: inline-block;
+}
+
+/* Animaciones */
+#boton{
+     width: 300px;
+     height: 120px;
+     background-color: blueviolet;
+     color: cyan;
+     transition: all 0.5s ease-in-out;
+     border-top: 5px solid red;
+}
+
+#boton:hover{
+     background-color: rgb(73, 226, 43);
+     color: rgb(7, 81, 0);
+     transform: translateX(50px);
+     border-bottom: 5px solid red;
+     border-top: none;
+}
