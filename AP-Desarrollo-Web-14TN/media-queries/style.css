@@ -1,0 +1,96 @@
+nav{
+     background-color: cadetblue;
+     padding: 2rem;
+     display: flex;
+     justify-content: space-between;
+}
+a{
+     text-decoration: none;
+     margin-left: 2rem;
+     font-size: larger;
+     color: antiquewhite;
+}
+img {
+     width: 100%;
+}
+div {
+     padding: 50px;
+     background-color: antiquewhite;
+     position: relative;
+     border: 1px solid rgba(191, 189, 139, 0.885);
+}
+#menuHmaburguesa{
+     width: 32px;
+     height: 32px;
+     display: none;
+     /* visibility: hidden; */
+}
+.heart{
+     width: 32px;
+     height: 32px;
+     display: none;
+}
+
+/* Pensado en Desktop First */
+/* 1° Break Points */
+@media screen and (max-width: 768px)  {
+     h2{
+          background-color: blueviolet;
+          color: antiquewhite;
+     }
+     div{
+          background-color: coral;
+     }
+}
+/* 2° Break Points */
+@media screen and (max-width: 425px) and (max-width: 760px) {
+     h2{
+          background-color: rgb(43, 226, 211);
+          color: rgb(102, 8, 154);
+     }
+     div{
+          background-color: rgb(179, 239, 174);
+          padding: 10px;
+          position: relative;
+     }
+     nav{
+          /* display: flex; */
+          justify-content: flex-end;
+     }
+     #menuHmaburguesa{
+          display: block;
+     }
+     a{
+          display: none;
+          /* visibility: hidden; */
+     }
+     .heart{
+          /* width: 32px;
+          height: 32px; */
+          display: inline-block;
+          position: absolute;
+          top: 90px;
+          right: 30px;
+     }
+}
+
+
+/* Pensado en Mobile First */
+/* 1° Break Points */
+/* @media screen and (min-width: 560px)  {
+     h1{
+          color: blueviolet;
+     }
+} */
+/* 2° Break Points */
+/* @media screen and (min-width: 920px)  {
+     h1{
+          background-color: antiquewhite;
+          padding: 10px;
+          color: rgb(23, 0, 44);
+     }
+} */
+
+
+
+
