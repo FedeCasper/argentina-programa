@@ -69,9 +69,40 @@
 let numeroSecreto = 7
 let numero = 0
 
-while( numero != numeroSecreto){
-     numero = Math.round(Math.random()*10)
-     console.log(numero);
+// while( numero != numeroSecreto){
+//      numero = Math.round(Math.random()*10)
+//      console.log(numero);
 
+// }
+// console.log(`el número secreto era ${numero}`);
+
+// do{
+//      numero = Math.round(Math.random()*10)
+//      console.log(numero);
+// }while( numero != numeroSecreto)
+
+// console.log(`el número secreto era ${numero}`);
+
+let persona = {
+     nombre: "Federico",
+     apellido: "Rouyere",
+     edad: 39,
+     esMentor: true,
+     mascotas: ["Barto", "Indiana", "Buda", "Odin"],
+     hobbies: {
+          deporte: "Fútbol",
+          arte: "Fotografía",
+          tecnología: "Video Juegos"
+     }
 }
-console.log(`el número secreto era ${numero}`);
+
+// for(propiedades in persona){
+//      console.log(propiedades);
+//      console.log(persona[propiedades]);
+// }
+
+let alumnos = [ "Franco", "Nicolas", "Agustina", "Lorena", "Marcos", "Florencia" ]
+
+// for(let alumno of alumnos){
+//      console.log(alumno);
+// }
