@@ -18,6 +18,8 @@ function sumar2(){
 let resultado = sumar2()
 // console.log(resultado);
 
+
+
 // ------------------------------------------------------
 // PARAMETRO Y ARGUMENTO
 
@@ -53,6 +55,8 @@ for(let objetoMentor of arrayObjetos){
 // console.log(estructura);
 
 
+
+
 // ------------------------------------------------------
 // PASO DE PARAMETROS INTRO FN ORDEN SUP
 
@@ -82,6 +86,8 @@ let arreglo = [
 
 // Llamado
 // imprimirPorConsola(actual, i, arreglo)
+
+
 
 // ------------------------------------------------------
 // FUNCIONES FLECHA
@@ -127,6 +133,8 @@ let arreglo = [
 //      }
 
 // console.log(flecha3(5));
+
+
 
 // ------------------------------------------------------
 // FUNCIONES DE ORDEN SUPERIOR
@@ -212,6 +220,9 @@ function ordenar(a,b){
 
 let numeroOrdenados2 = numeroMayores.sort( (a,b) => a-b )
 console.log(numeroOrdenados2);
+
+let mentoresOrdenadosPorEdad = arrayObjetos.sort((a,b) => a.edad - b.edad)
+console.log(mentoresOrdenadosPorEdad);
 
 // 8 - Reduce (Reduce un array a un solo elemento)
 // Recibe más parámentros que las otras funciones
