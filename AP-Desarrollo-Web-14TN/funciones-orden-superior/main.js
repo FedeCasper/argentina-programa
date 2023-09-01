@@ -140,7 +140,7 @@ let arreglo = [
 // FUNCIONES DE ORDEN SUPERIOR
 // Forma en que la función callback recibe los 3 argumentos
 
-// function imprimirPorConsola(elementoActual, indice, array){
+// function imprimirPorConsola(elementoActual, indice, array){im
 //      console.log("Elemento Actual", elementoActual);
 //      console.log("indice", indice);
 //      console.log("array original", array);
@@ -196,11 +196,11 @@ let arreglo = [
 // let indice = arrayObjetos.findIndex( (elementoActual) =>  elementoActual.nombre == "Fede" )
 // console.log(indice);
 
-// 6 - Every (Retorna un booleano si todos los elementos cumplen la condición)
+// 7 - Every (Retorna un booleano si todos los elementos cumplen la condición)
 // let booleano = arrayObjetos.every( (elementoActual) =>  elementoActual.nombre != "" )
 // console.log(booleano);
 
-// 7 - Sort (Modifica el array original y ordena los elementos según el valor que retorne la fn callback)
+// 8 - Sort (Modifica el array original y ordena los elementos según el valor que retorne la fn callback)
 let numerosUnaCifra = [1,8,6,5,4,2,3,1] 
 let numeroMayores = [20,30,101,50,15,800,7500,94,621]
 
@@ -224,9 +224,13 @@ console.log(numeroOrdenados2);
 let mentoresOrdenadosPorEdad = arrayObjetos.sort((a,b) => a.edad - b.edad)
 console.log(mentoresOrdenadosPorEdad);
 
-// 8 - Reduce (Reduce un array a un solo elemento)
+// 9 - Reduce (Reduce un array a un solo elemento)
 // Recibe más parámentros que las otras funciones
 
+// Se puede definir el valor inicial del acumulador
+// Le doy valor con la coma y el tipo de dato
+// Si no defino el acc toma el valor del 1° elemento del array
+// El acc toma lo que retorna la función
 // function callback(accumulador, elementoActual, indice, arrayOriginal){
 //      console.log("acumulador", accumulador);
 //      console.log("Elemento Actual", elementoActual);
