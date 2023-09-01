@@ -1,0 +1,48 @@
+.contenedor{
+     height: 100vh;
+     display: flex;
+     flex-direction: column;
+}.contenedorDivs{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 20px;
+     background-color: rgb(155, 223, 214);
+     width: 450px;
+     height: 200px;
+     cursor: pointer;
+}
+.checks{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 20px;
+     background-color: rgb(95, 39, 215);
+     height: 100px;
+     cursor: pointer;
+}
+.cards{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 20px;
+     background-color: rgb(190, 178, 241);
+     height: 100px;
+     cursor: pointer;
+}
+.cuadrado{
+     background-color: blueviolet;
+     width: 100px;
+     height: 100px;
+     cursor: pointer;
+}
+.circulo{
+     border-radius: 50%;
+     background-color: orange;
+     width: 100px;
+     height: 100px;
+     cursor: pointer;
+}
+footer{
+     background-color: rgb(95, 39, 215);
+}
