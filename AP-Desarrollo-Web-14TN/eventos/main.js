@@ -77,7 +77,7 @@ function crearEstructuraCheck(string){
      let template = ""
      template = `
      <label class="me-2">
-          <input type="checkbox" class="me-2" name="frutas" value="${string}">${string}
+          <input type="checkbox" class="me-2" name="frutas" value="}">
      </label>
      `
      return template
