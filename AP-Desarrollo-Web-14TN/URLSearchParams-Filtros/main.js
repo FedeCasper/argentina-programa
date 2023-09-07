@@ -26,9 +26,8 @@ imprimirChecksEnHTML(catSinRepetir, $contenedorChecks)
 
 // Agregamos el escuchador de eventos y buscamos el array de chequeados
 $contenedorChecks.addEventListener("change", (e) => {
-     let array = Array.from(document.querySelectorAll("input[type='checkbox']:checked")).map(check => check.value)
-     let objetosFiltradosPorCheck = arrayObjetos.filter(objeto => array.includes(objeto.modulo))
-     imprimirCardsEnHTML(objetosFiltradosPorCheck, $containerCards)
+     const returnCruzado = filtroCruzado(arrayObjetos, $search)
+     imprimirCardsEnHTML(returnCruzado, $containerCards)
 })
 
 // Declaro mi función para crear estructuras de cards
@@ -56,3 +55,40 @@ function imprimirCardsEnHTML(array, elementoHTML) {
           elementoHTML.innerHTML = estructura
 }
 imprimirCardsEnHTML(arrayObjetos, $containerCards)
+
+// Repaso -------------------------------------//
+const $search = document.querySelector('input[type="search"]')
+// console.log([$search]);
+// console.log([$search.value]);
+
+$search.addEventListener( "keyup", ()=>{
+     const returnCruzado = filtroCruzado(arrayObjetos, $search)
+     imprimirCardsEnHTML(returnCruzado,$containerCards)
+} )
+
+// Fn de filtro search
+function filtroPorSearch(array, input){
+     let arrayFiltradosSearch = array.filter( objeto => objeto.nombre.includes(input.value))
+     console.log(arrayFiltradosSearch);
+     return arrayFiltradosSearch
+}
+
+// Fn de filtro check
+function filtroPorCheck(array){
+     let arrayValues = Array.from(document.querySelectorAll("input[type='checkbox']:checked")).map(check => check.value)
+     if(arrayValues.length > 0){
+          let objetosFiltradosPorCheck = array.filter(objeto => arrayValues.includes(objeto.modulo))
+          return objetosFiltradosPorCheck
+     }else{
+          return arrayObjetos
+     }
+}
+
+// Combinar los filtros
+function filtroCruzado(array, input){
+     const arrayFiltradoCheck = filtroPorCheck(array)
+     const arrayFiltradoSearch = filtroPorSearch(arrayFiltradoCheck, input)
+     console.log(arrayFiltradoCheck);
+     console.log(arrayFiltradoSearch);
+     return arrayFiltradoSearch
+}
