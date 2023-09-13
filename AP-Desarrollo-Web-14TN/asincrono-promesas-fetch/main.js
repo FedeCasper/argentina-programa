@@ -50,4 +50,4 @@ function mostrarNombresPersonajes(array){
           console.log(personaje.Nombre);
      }
 }
-
+     
