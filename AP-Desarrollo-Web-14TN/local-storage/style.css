@@ -1,0 +1,54 @@
+.contenedor{
+     height: 100vh;
+     display: flex;
+     flex-direction: column;
+}
+[v-cloak]{
+     display: none;
+}
+main{
+     background-color: rgb(217, 240, 220);
+}
+.contenedorDivs{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 20px;
+     background-color: rgb(217, 240, 220);
+     width: 450px;
+     height: 200px;
+     cursor: pointer;
+}
+.checks{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 20px;
+     background-color: #3eb888;
+     height: 100px;
+     cursor: pointer;
+}
+.cards{
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     gap: 20px;
+     height: 100px;
+     cursor: pointer;
+}
+.cuadrado{
+     background-color: blueviolet;
+     width: 100px;
+     height: 100px;
+     cursor: pointer;
+}
+.circulo{
+     border-radius: 50%;
+     background-color: orange;
+     width: 100px;
+     height: 100px;
+     cursor: pointer;
+}
+footer{
+     background-color: #3eb888;
+}
